@@ -20,9 +20,8 @@ export default function PlaceTemplate(props) {
             <p style={{ textAlign: 'center', fontFamily: 'optima', fontSize: 20, fontWeight: 550 }}>{name}</p>
             {images.map((image, i) => {
                 return (
-                    <div style={{ width: "100%", height: 500 }}>
-                        <LazyLoadImage key={i} delayTime={300} alt="island" effect="blur" height={500} width={"100%"} src={image} />
-                    </div>)
+                    <LazyLoadImage key={i} delayTime={300} alt="island" effect="blur" height={"100%"} width={"100%"} src={image} />
+                )
             })}
         </>
     );
